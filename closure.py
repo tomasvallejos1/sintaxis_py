@@ -1,3 +1,5 @@
+from functools import reduce #para poder usar el reduce
+
 #09-functtions.py
 
 
@@ -28,3 +30,37 @@ saludo_formal = crear_saludo("Buenos días estimado")
 
 print(saludo_generico("Mj"))
 print(saludo_formal("Mar"))
+
+print("\n ________________________________\n")
+#Built-in high order functions, ya vienen definidas por python
+#map,filter,reduce,zip, enumerate,sorted,etc
+
+lista = [2,3,42,1,9]
+lista2 = ['a','b','c','d','e']
+#1
+print("\n -- map -- \n")
+print(list(map(lambda x: x*2, lista)))  #La funcion list convierte un iterable en lista
+
+#2
+print("\n -- filter -- \n")
+
+print(list(filter(lambda x: x % 2 == 0, lista)))
+#3
+print("\n -- reduce -- \n")
+
+print(reduce(lambda x,y: x + y, lista))
+
+#4
+print("\n -- zip -- \n")
+
+print(list(zip(lista2, lista)))
+
+#5
+print("\n -- sorted -- \n")
+
+print(list(sorted(lista, reverse=True)))
+
+#6
+print("\n -- enumerate -- \n")
+
+print(list(enumerate(lista)))
