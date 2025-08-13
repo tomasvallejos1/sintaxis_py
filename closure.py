@@ -58,7 +58,7 @@ print(list(zip(lista2, lista)))
 #5
 print("\n -- sorted -- \n")
 
-print(list(sorted(lista, reverse=True)))
+print(list(sorted(lista, reverse=True))) #reverse true al revez, false o sin nada queda ordenado menor a mayor.
 
 #6
 print("\n -- enumerate -- \n")
